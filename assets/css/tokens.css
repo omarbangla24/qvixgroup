@@ -1,0 +1,91 @@
+/* ==========================================================================
+   QVIX Group — Design tokens
+   See DESIGN.md for intent and usage rules.
+   ========================================================================== */
+
+:root {
+  /* ---- Color ----------------------------------------------------------- */
+  --c-ink-900: #0a0b0b;
+  --c-ink-800: #0f1110;
+  --c-ink-700: #151817;
+  --c-ink-600: #1d201f;
+  --c-paper: #ece8df;
+  --c-paper-dim: rgba(236, 232, 223, 0.72);
+  --c-paper-mute: rgba(236, 232, 223, 0.54);
+  --c-paper-faint: rgba(236, 232, 223, 0.3);
+  --c-line: rgba(236, 232, 223, 0.11);
+  --c-line-strong: rgba(236, 232, 223, 0.22);
+  --c-accent: #ff5a1f;
+  --c-accent-soft: rgba(255, 90, 31, 0.14);
+  --c-on-accent: #0a0b0b;
+
+  /* ---- Typography ------------------------------------------------------ */
+  --font-sans: "Geist", "Helvetica Neue", Helvetica, Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --fs-micro: 0.6875rem;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: clamp(1rem, 0.97rem + 0.16vw, 1.125rem);
+  --fs-md: clamp(1.25rem, 1.08rem + 0.5vw, 1.625rem);
+  --fs-lg: clamp(1.75rem, 1.31rem + 1.6vw, 3rem);
+  --fs-xl: clamp(2.5rem, 1.58rem + 3.9vw, 5.5rem);
+  --fs-2xl: clamp(3.25rem, 1.75rem + 6.4vw, 9rem);
+  --fs-display: clamp(3.5rem, 1.6rem + 8.4vw, 11.5rem);
+
+  --lh-tight: 0.92;
+  --lh-snug: 1.08;
+  --lh-body: 1.55;
+
+  --tr-display: -0.045em;
+  --tr-head: -0.03em;
+  --tr-micro: 0.08em;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  /* ---- Spacing (4px base) ---------------------------------------------- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+  --s-11: 10rem;
+  --s-12: 12rem;
+
+  --margin: clamp(1rem, 0.6rem + 1.8vw, 2.5rem);
+  --gutter: clamp(0.75rem, 0.55rem + 0.9vw, 1.5rem);
+  --section-y: clamp(6rem, 4.2rem + 7.6vw, 12rem);
+  --max-w: 1680px;
+  --header-h: 72px;
+
+  /* ---- Motion ---------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-snap: cubic-bezier(0.2, 0.9, 0.1, 1);
+  --d-fast: 200ms;
+  --d-base: 400ms;
+  --d-slow: 800ms;
+  --d-cine: 1200ms;
+
+  /* ---- Layers ---------------------------------------------------------- */
+  --z-grid: 1;
+  --z-content: 2;
+  --z-follower: 50;
+  --z-header: 100;
+  --z-menu: 110;
+  --z-grain: 200;
+  --z-loader: 300;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-h: 80px;
+  }
+}

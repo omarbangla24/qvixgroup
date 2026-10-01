@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QVIX Group — Technology, engineered for what’s next</title>
+  <meta name="description" content="QVIX Group builds software, digital systems and technology solutions that help ambitious businesses operate, scale and evolve.">
+  <meta name="theme-color" content="#0a0b0b">
+  <meta property="og:title" content="QVIX Group — Technology, engineered for what’s next">
+  <meta property="og:description" content="Software, digital systems and technology solutions for ambitious businesses.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+
+  <script>
+    document.documentElement.classList.replace('no-js', 'js');
+    try { if (sessionStorage.getItem('qvix:loaded')) document.documentElement.classList.add('is-returning'); } catch (e) {}
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Page loader ---------------------------------------------------------->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__row">
+        <span class="micro">QVIX Group</span>
+        <span class="micro">Initialising system</span>
+      </div>
+      <div class="loader__count"><span data-loader-count>000</span><span class="loader__pct">%</span></div>
+      <div class="loader__bar"><span data-loader-bar></span></div>
+      <div class="loader__row">
+        <span class="micro">QVG / 00</span>
+        <span class="micro" data-loader-step>Loading modules</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ambient layers ------------------------------------------------------->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="guides" aria-hidden="true">
+    <div class="guides__inner"><span></span><span></span><span></span><span></span><span></span></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true">
+    <div class="grid-overlay__inner">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="follower" aria-hidden="true">
+    <div class="follower__label" data-follower-label>View</div>
+    <div class="follower__preview" data-follower-preview></div>
+  </div>
+
+  <!-- 1. Header ------------------------------------------------------------>
+  <header class="header" data-header>
+    <div class="header__inner wrap">
+      <a class="logo" href="#top" aria-label="QVIX Group — home">
+        <svg class="logo__mark" viewBox="0 0 28 28" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M13 13 L26.5 26.5" stroke="currentColor" stroke-width="2.2"/>
+          <rect x="8.5" y="8.5" width="5" height="5" class="logo__dot"/>
+        </svg>
+        <span class="logo__word">QVIX</span><span class="logo__group">Group</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#capabilities"><span class="nav__idx">01</span>Services</a></li>
+          <li><a class="nav__link" href="#system"><span class="nav__idx">02</span>Solutions</a></li>
+          <li><a class="nav__link" href="#work"><span class="nav__idx">03</span>Work</a></li>
+          <li><a class="nav__link" href="#about"><span class="nav__idx">04</span>About</a></li>
+          <li><a class="nav__link" href="#insights"><span class="nav__idx">05</span>Insights</a></li>
+          <li><a class="nav__link" href="#contact"><span class="nav__idx">06</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__end">
+        <span class="header__clock micro" aria-hidden="true"><span class="dot dot--live"></span><span data-clock>--:--:--</span></span>
+        <a class="btn btn--compact" href="#contact" data-magnetic>
+          <span class="btn__label">Start a project</span>
+          <span class="btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 16 16"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span class="visually-hidden">Menu</span>
+          <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+    <div class="header__progress" aria-hidden="true"><span data-scroll-progress></span></div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+    <nav class="mobile-menu__nav wrap" aria-label="Mobile">
+      <span class="micro mobile-menu__label">Index</span>
+      <ul>
+        <li><a href="#capabilities"><span class="micro">01</span>Services</a></li>
+        <li><a href="#system"><span class="micro">02</span>Solutions</a></li>
+        <li><a href="#work"><span class="micro">03</span>Work</a></li>
+        <li><a href="#about"><span class="micro">04</span>About</a></li>
+        <li><a href="#insights"><span class="micro">05</span>Insights</a></li>
+        <li><a href="#contact"><span class="micro">06</span>Contact</a></li>
+      </ul>
+      <a class="btn" href="#contact"><span class="btn__label">Start a project</span><span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- 2. Hero ------------------------------------------------------------>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__grid-bg" aria-hidden="true"><span class="hero__scan"></span></div>
+
+      <div class="hero__inner wrap grid">
+        <div class="hero__meta">
+          <span class="micro"><span class="accent">QVG</span> / 01</span>
+          <span class="micro hero__meta-mid">Index — Technology company</span>
+          <span class="micro hero__meta-end">Software · Systems · Infrastructure</span>
+        </div>
+
+        <figure class="hero__visual" aria-hidden="true">
+          <canvas class="hero__canvas" data-hero-canvas></canvas>
+          <span class="corner corner--tl"></span><span class="corner corner--tr"></span>
+          <span class="corner corner--bl"></span><span class="corner corner--br"></span>
+          <span class="hero__cross"></span>
+          <figcaption class="hero__fig micro">Fig. 01 — System model</figcaption>
+          <dl class="hero__readout micro">
+            <div><dt>Rot.X</dt><dd data-readout="rx">000.0°</dd></div>
+            <div><dt>Rot.Y</dt><dd data-readout="ry">000.0°</dd></div>
+            <div><dt>Morph</dt><dd data-readout="morph">0.000</dd></div>
+            <div><dt>Nodes</dt><dd data-readout="nodes">0000</dd></div>
+          </dl>
+        </figure>
+
+        <h1 class="hero__title" id="hero-title">
+          <span class="line"><span class="line__inner">Technology,</span></span>
+          <span class="line"><span class="line__inner">engineered <em class="hero__title-for">for</em></span></span>
+          <span class="line"><span class="line__inner">what’s next<span class="accent">.</span></span></span>
+        </h1>
+
+        <div class="hero__body">
+          <p class="hero__lead" data-reveal>QVIX Group builds software, digital systems and technology solutions that help ambitious businesses operate, scale and evolve.</p>
+          <div class="hero__actions" data-reveal>
+            <a class="btn btn--primary" href="#capabilities" data-magnetic>
+              <span class="btn__label">Explore our capabilities</span>
+              <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 2v12M3 9l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+            </a>
+            <a class="link-underline" href="#work">View selected work</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__status wrap" aria-hidden="true">
+        <div class="status-cell"><span class="micro status-cell__k">Status</span><span class="micro status-cell__v"><span class="dot dot--live"></span>Systems online</span></div>
+        <div class="status-cell"><span class="micro status-cell__k">Render</span><span class="micro status-cell__v" data-status="fps">— fps</span></div>
+        <div class="status-cell"><span class="micro status-cell__k">Viewport</span><span class="micro status-cell__v" data-status="viewport">—</span></div>
+        <div class="status-cell"><span class="micro status-cell__k">Scroll</span><span class="micro status-cell__v"><span class="scroll-cue"></span>To explore</span></div>
+      </div>
+    </section>
+
+    <!-- 3. Marquee --------------------------------------------------------->
+    <section class="marquee" aria-label="What we do">
+      <div class="marquee__track" data-marquee>
+        <ul class="marquee__group">
+          <li>Software</li><li>Digital Systems</li><li>Automation</li><li>Cloud</li><li>Data</li><li>AI</li><li>Product Engineering</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Introduction ---------------------------------------------------->
+    <section class="intro section" id="about" aria-labelledby="intro-title">
+      <div class="wrap grid">
+        <div class="intro__aside">
+          <p class="section-label" id="intro-title"><span class="accent">01</span> / Who we are</p>
+
+          <div class="intro__counters" data-reveal>
+            <div class="counter">
+              <span class="counter__value" data-count="6" data-pad="2">00</span>
+              <span class="micro counter__label">Capability areas</span>
+              <span class="counter__bar"><span style="--fill: 1"></span></span>
+            </div>
+            <div class="counter">
+              <span class="counter__value" data-count="4" data-pad="2">00</span>
+              <span class="micro counter__label">Stage delivery method</span>
+              <span class="counter__bar"><span style="--fill: .66"></span></span>
+            </div>
+            <div class="counter">
+              <span class="counter__value" data-count="1" data-pad="2">00</span>
+              <span class="micro counter__label">Accountable team, end to end</span>
+              <span class="counter__bar"><span style="--fill: .33"></span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro__main">
+          <p class="intro__statement" data-scrub-words>QVIX Group is a technology company focused on building reliable digital infrastructure, software products and intelligent systems for businesses.</p>
+
+          <div class="intro__cols">
+            <p data-reveal>We work where technology meets operations — the systems a business actually runs on. Our teams design, build and maintain software that is measured by what it changes, not by how it looks in a slide.</p>
+            <p data-reveal>From a single critical platform to a connected landscape of products, data and automation, we take responsibility for the whole system and stay with it as it grows.</p>
+          </div>
+
+          <a class="link-arrow" href="#approach" data-reveal>
+            <span>How we work</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Capabilities ---------------------------------------------------->
+    <section class="caps section" id="capabilities" aria-labelledby="caps-title">
+      <div class="wrap">
+        <header class="section-head grid">
+          <p class="section-label"><span class="accent">02</span> / Capabilities</p>
+          <h2 class="section-title" id="caps-title" data-reveal="lines">Six disciplines.<br>One engineering standard.</h2>
+          <p class="section-note micro" data-reveal>Hover or select a discipline<br>to inspect it</p>
+        </header>
+
+        <div class="caps__body grid">
+          <ol class="caps__list" data-caps>
+            <li class="cap is-active" data-cap="0">
+              <button class="cap__head" type="button" aria-expanded="true" aria-controls="cap-0">
+                <span class="cap__num micro">01</span>
+                <span class="cap__title">Software Engineering</span>
+                <span class="cap__plus" aria-hidden="true"></span>
+              </button>
+              <div class="cap__panel" id="cap-0">
+                <div class="cap__panel-inner">
+                  <p>Custom software built to last — architected for change, tested by default and documented for the team that inherits it.</p>
+                  <ul class="tags"><li>Custom applications</li><li>APIs &amp; integrations</li><li>Mobile</li><li>Modernisation</li></ul>
+                </div>
+              </div>
+            </li>
+            <li class="cap" data-cap="1">
+              <button class="cap__head" type="button" aria-expanded="false" aria-controls="cap-1">
+                <span class="cap__num micro">02</span>
+                <span class="cap__title">Business Systems</span>
+                <span class="cap__plus" aria-hidden="true"></span>
+              </button>
+              <div class="cap__panel" id="cap-1">
+                <div class="cap__panel-inner">
+                  <p>ERP, CRM and operational platforms shaped around how your organisation really works — not the other way around.</p>
+                  <ul class="tags"><li>ERP &amp; CRM</li><li>Workflow platforms</li><li>Internal tools</li><li>Reporting</li></ul>
+                </div>
+              </div>
+            </li>
+            <li class="cap" data-cap="2">
+              <button class="cap__head" type="button" aria-expanded="false" aria-controls="cap-2">
+                <span class="cap__num micro">03</span>
+                <span class="cap__title">Web &amp; Digital Platforms</span>
+                <span class="cap__plus" aria-hidden="true"></span>
+              </button>
+              <div class="cap__panel" id="cap-2">
+                <div class="cap__panel-inner">
+                  <p>High-performance websites, portals and digital products — fast, accessible and engineered to convert attention into outcomes.</p>
+                  <ul class="tags"><li>Web platforms</li><li>Portals</li><li>E‑commerce</li><li>Design systems</li></ul>
+                </div>
+              </div>
+            </li>
+            <li class="cap" data-cap="3">
+              <button class="cap__head" type="button" aria-expanded="false" aria-controls="cap-3">
+                <span class="cap__num micro">04</span>
+                <span class="cap__title">Automation &amp; AI</span>
+                <span class="cap__plus" aria-hidden="true"></span>
+              </button>
+              <div class="cap__panel" id="cap-3">
+                <div class="cap__panel-inner">
+                  <p>Removing repetitive work and adding intelligence where it measurably helps — from process automation to applied machine learning.</p>
+                  <ul class="tags"><li>Process automation</li><li>Applied AI</li><li>Document intelligence</li><li>Integrations</li></ul>
+                </div>
+              </div>
+            </li>
+            <li class="cap" data-cap="4">
+              <button class="cap__head" type="button" aria-expanded="false" aria-controls="cap-4">
+                <span class="cap__num micro">05</span>
+                <span class="cap__title">Cloud &amp; Infrastructure</span>
+                <span class="cap__plus" aria-hidden="true"></span>
+              </button>
+              <div class="cap__panel" id="cap-4">
+                <div class="cap__panel-inner">
+                  <p>Secure, observable and cost-aware infrastructure — migrations, DevOps pipelines and environments that scale without surprises.</p>
+                  <ul class="tags"><li>Cloud migration</li><li>DevOps &amp; CI/CD</li><li>Security</li><li>Observability</li></ul>
+                </div>
+              </div>
+            </li>
+            <li class="cap" data-cap="5">
+              <button class="cap__head" type="button" aria-expanded="false" aria-controls="cap-5">
+                <span class="cap__num micro">06</span>
+                <span class="cap__title">Technology Consulting</span>
+                <span class="cap__plus" aria-hidden="true"></span>
+              </button>
+              <div class="cap__panel" id="cap-5">
+                <div class="cap__panel-inner">
+                  <p>Clear-eyed technical advice: audits, architecture reviews and roadmaps that turn ambition into a sequenced, fundable plan.</p>
+                  <ul class="tags"><li>Technical audits</li><li>Architecture</li><li>Roadmapping</li><li>Digital strategy</li></ul>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+          <div class="caps__stage" aria-hidden="true">
+            <div class="caps__frame">
+              <div class="caps__frame-top">
+                <span class="micro">Schematic</span>
+                <span class="micro"><span data-cap-index>01</span> / 06</span>
+              </div>
+
+              <div class="caps__visuals">
+                <!-- 01 Software engineering: editor -->
+                <svg class="cap-vis is-active" viewBox="0 0 400 300">
+                  <rect x="20" y="20" width="360" height="260" pathLength="1"/>
+                  <line x1="20" y1="48" x2="380" y2="48" pathLength="1"/>
+                  <circle cx="36" cy="34" r="4" pathLength="1"/><circle cx="50" cy="34" r="4" pathLength="1"/>
+                  <line x1="64" y1="48" x2="64" y2="280" pathLength="1" class="faint"/>
+                  <g class="mono-txt"><text x="34" y="74">01</text><text x="34" y="98">02</text><text x="34" y="122">03</text><text x="34" y="146">04</text><text x="34" y="170">05</text><text x="34" y="194">06</text><text x="34" y="218">07</text><text x="34" y="242">08</text></g>
+                  <line x1="80" y1="70" x2="160" y2="70" pathLength="1"/>
+                  <line x1="96" y1="94" x2="250" y2="94" pathLength="1"/>
+                  <line x1="112" y1="118" x2="210" y2="118" pathLength="1"/>
+                  <line x1="112" y1="142" x2="300" y2="142" pathLength="1" class="acc"/>
+                  <line x1="112" y1="166" x2="180" y2="166" pathLength="1"/>
+                  <line x1="96" y1="190" x2="140" y2="190" pathLength="1"/>
+                  <line x1="96" y1="214" x2="270" y2="214" pathLength="1"/>
+                  <line x1="80" y1="238" x2="100" y2="238" pathLength="1"/>
+                  <rect x="304" y="134" width="7" height="14" class="fill-acc blink"/>
+                  <text x="364" y="268" class="mono-txt" text-anchor="end">build ✓ 0 errors</text>
+                </svg>
+
+                <!-- 02 Business systems: entity relations -->
+                <svg class="cap-vis" viewBox="0 0 400 300">
+                  <rect x="24" y="36" width="120" height="104" pathLength="1"/><line x1="24" y1="60" x2="144" y2="60" pathLength="1"/>
+                  <line x1="36" y1="80" x2="120" y2="80" pathLength="1" class="faint"/><line x1="36" y1="100" x2="104" y2="100" pathLength="1" class="faint"/><line x1="36" y1="120" x2="128" y2="120" pathLength="1" class="faint"/>
+                  <rect x="256" y="24" width="120" height="84" pathLength="1"/><line x1="256" y1="48" x2="376" y2="48" pathLength="1"/>
+                  <line x1="268" y1="68" x2="340" y2="68" pathLength="1" class="faint"/><line x1="268" y1="88" x2="356" y2="88" pathLength="1" class="faint"/>
+                  <rect x="140" y="176" width="140" height="100" pathLength="1" class="acc"/><line x1="140" y1="200" x2="280" y2="200" pathLength="1" class="acc"/>
+                  <line x1="152" y1="220" x2="240" y2="220" pathLength="1" class="faint"/><line x1="152" y1="240" x2="260" y2="240" pathLength="1" class="faint"/><line x1="152" y1="260" x2="220" y2="260" pathLength="1" class="faint"/>
+                  <path d="M144 88 H200 V66 H256" pathLength="1"/>
+                  <path d="M84 140 V226 H140" pathLength="1"/>
+                  <path d="M316 108 V226 H280" pathLength="1"/>
+                  <g class="mono-txt"><text x="32" y="53">orders</text><text x="264" y="41">customers</text><text x="148" y="193" class="t-acc">operations</text></g>
+                  <circle cx="200" cy="66" r="3" class="fill-acc"/><circle cx="84" cy="226" r="3" class="fill-acc"/><circle cx="316" cy="226" r="3" class="fill-acc"/>
+                </svg>
+
+                <!-- 03 Web & digital: responsive frames -->
+                <svg class="cap-vis" viewBox="0 0 400 300">
+                  <rect x="20" y="30" width="270" height="200" pathLength="1"/>
+                  <line x1="20" y1="52" x2="290" y2="52" pathLength="1"/>
+                  <rect x="80" y="38" width="150" height="7" pathLength="1" class="faint"/>
+                  <rect x="36" y="68" width="150" height="60" pathLength="1" class="acc"/>
+                  <line x1="200" y1="72" x2="272" y2="72" pathLength="1" class="faint"/><line x1="200" y1="86" x2="260" y2="86" pathLength="1" class="faint"/><line x1="200" y1="100" x2="268" y2="100" pathLength="1" class="faint"/>
+                  <rect x="36" y="144" width="70" height="70" pathLength="1"/><rect x="118" y="144" width="70" height="70" pathLength="1"/><rect x="200" y="144" width="74" height="70" pathLength="1"/>
+                  <rect x="306" y="96" width="74" height="150" rx="10" pathLength="1"/>
+                  <line x1="330" y1="108" x2="356" y2="108" pathLength="1"/>
+                  <rect x="316" y="122" width="54" height="34" pathLength="1" class="acc"/>
+                  <line x1="316" y1="168" x2="370" y2="168" pathLength="1" class="faint"/><line x1="316" y1="180" x2="356" y2="180" pathLength="1" class="faint"/><rect x="316" y="196" width="54" height="34" pathLength="1"/>
+                  <g class="mono-txt"><text x="20" y="252">1440 — desktop</text><text x="306" y="266">390 — mobile</text></g>
+                </svg>
+
+                <!-- 04 Automation & AI: flow + network -->
+                <svg class="cap-vis" viewBox="0 0 400 300">
+                  <rect x="20" y="126" width="64" height="48" pathLength="1"/>
+                  <path d="M84 150 H120" pathLength="1"/>
+                  <path d="M140 130 L160 150 L140 170 L120 150 Z" pathLength="1" class="acc"/>
+                  <path d="M150 140 V80 H200" pathLength="1"/><path d="M150 160 V220 H200" pathLength="1"/>
+                  <circle cx="220" cy="80" r="8" pathLength="1"/><circle cx="220" cy="220" r="8" pathLength="1"/>
+                  <circle cx="290" cy="60" r="6" pathLength="1"/><circle cx="290" cy="110" r="6" pathLength="1"/><circle cx="290" cy="190" r="6" pathLength="1"/><circle cx="290" cy="240" r="6" pathLength="1"/>
+                  <g class="faint">
+                    <line x1="228" y1="80" x2="284" y2="60" pathLength="1"/><line x1="228" y1="80" x2="284" y2="110" pathLength="1"/><line x1="228" y1="80" x2="284" y2="190" pathLength="1"/>
+                    <line x1="228" y1="220" x2="284" y2="110" pathLength="1"/><line x1="228" y1="220" x2="284" y2="190" pathLength="1"/><line x1="228" y1="220" x2="284" y2="240" pathLength="1"/>
+                    <line x1="296" y1="60" x2="352" y2="150" pathLength="1"/><line x1="296" y1="110" x2="352" y2="150" pathLength="1"/><line x1="296" y1="190" x2="352" y2="150" pathLength="1"/><line x1="296" y1="240" x2="352" y2="150" pathLength="1"/>
+                  </g>
+                  <circle cx="362" cy="150" r="10" pathLength="1" class="acc"/>
+                  <circle cx="362" cy="150" r="3" class="fill-acc"/>
+                  <g class="mono-txt"><text x="28" y="194">trigger</text><text x="124" y="120">route</text><text x="330" y="182">output</text></g>
+                </svg>
+
+                <!-- 05 Cloud & infrastructure: isometric stack -->
+                <svg class="cap-vis" viewBox="0 0 400 300">
+                  <path d="M200 40 L320 90 L200 140 L80 90 Z" pathLength="1" class="acc"/>
+                  <path d="M80 130 L200 180 L320 130" pathLength="1"/>
+                  <path d="M80 170 L200 220 L320 170" pathLength="1"/>
+                  <path d="M80 210 L200 260 L320 210" pathLength="1"/>
+                  <path d="M80 90 V210 M200 140 V260 M320 90 V210" pathLength="1" class="faint"/>
+                  <g class="faint"><line x1="120" y1="107" x2="120" y2="125" pathLength="1"/><line x1="140" y1="115" x2="140" y2="133" pathLength="1"/><line x1="160" y1="124" x2="160" y2="142" pathLength="1"/></g>
+                  <circle cx="200" cy="90" r="4" class="fill-acc"/>
+                  <g class="mono-txt"><text x="330" y="94">edge</text><text x="330" y="134">app</text><text x="330" y="174">data</text><text x="330" y="214">network</text></g>
+                </svg>
+
+                <!-- 06 Technology consulting: matrix + roadmap -->
+                <svg class="cap-vis" viewBox="0 0 400 300">
+                  <line x1="40" y1="260" x2="380" y2="260" pathLength="1"/>
+                  <line x1="40" y1="20" x2="40" y2="260" pathLength="1"/>
+                  <line x1="210" y1="20" x2="210" y2="260" pathLength="1" class="faint"/>
+                  <line x1="40" y1="140" x2="380" y2="140" pathLength="1" class="faint"/>
+                  <path d="M70 230 C 130 220, 160 180, 200 160 S 290 80, 350 50" pathLength="1" class="acc"/>
+                  <circle cx="70" cy="230" r="5" pathLength="1"/><circle cx="200" cy="160" r="5" pathLength="1"/><circle cx="280" cy="100" r="5" pathLength="1"/>
+                  <circle cx="350" cy="50" r="7" class="fill-acc"/>
+                  <g class="mono-txt"><text x="48" y="36">value ↑</text><text x="372" y="280" text-anchor="end">effort →</text><text x="78" y="250">now</text><text x="208" y="182">next</text><text x="288" y="122">later</text></g>
+                </svg>
+              </div>
+
+              <div class="caps__frame-bottom">
+                <span class="micro" data-cap-name>Software Engineering</span>
+                <span class="caps__ticks" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></span>
+              </div>
+            </div>
+
+            <div class="caps__info" data-cap-info>
+              <p class="caps__desc" data-cap-desc></p>
+              <ul class="tags" data-cap-tags></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Featured work --------------------------------------------------->
+    <!-- PLACEHOLDER: project names, categories, years and descriptions are
+         sample content. Replace with real case studies before launch. -->
+    <section class="work section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <header class="section-head grid">
+          <p class="section-label"><span class="accent">03</span> / Selected work</p>
+          <h2 class="section-title" id="work-title" data-reveal="lines">Systems in production.</h2>
+          <a class="link-arrow section-note" href="#work">
+            <span>All work</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </header>
+
+        <div class="work__grid">
+          <!-- Project 01 -->
+          <article class="project project--a" data-reveal data-cursor="View case">
+            <a class="project__link" href="#work" aria-label="View case study: Meridian Operations Platform"></a>
+            <div class="project__visual">
+              <div class="ui ui-dash" data-parallax="-0.06">
+                <div class="ui-dash__side">
+                  <span class="ui-dot"></span>
+                  <span class="ui-bar w-70"></span><span class="ui-bar w-50 is-on"></span><span class="ui-bar w-60"></span><span class="ui-bar w-40"></span>
+                </div>
+                <div class="ui-dash__main">
+                  <div class="ui-dash__kpis">
+                    <div class="ui-kpi"><span class="ui-bar w-40"></span><b>98.2</b></div>
+                    <div class="ui-kpi"><span class="ui-bar w-50"></span><b>1,284</b></div>
+                    <div class="ui-kpi ui-kpi--acc"><span class="ui-bar w-30"></span><b>−34%</b></div>
+                  </div>
+                  <div class="ui-dash__chart">
+                    <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+                      <path class="grid-l" d="M0 25H300M0 50H300M0 75H300"/>
+                      <path class="area" d="M0 80 L30 72 L60 76 L90 58 L120 62 L150 44 L180 50 L210 32 L240 38 L270 20 L300 24 V100 H0Z"/>
+                      <path class="line" d="M0 80 L30 72 L60 76 L90 58 L120 62 L150 44 L180 50 L210 32 L240 38 L270 20 L300 24"/>
+                    </svg>
+                  </div>
+                  <div class="ui-dash__rows">
+                    <div class="ui-row"><span class="ui-bar w-30"></span><span class="ui-bar w-20"></span><span class="ui-pill">Live</span></div>
+                    <div class="ui-row"><span class="ui-bar w-40"></span><span class="ui-bar w-10"></span><span class="ui-pill ui-pill--mute">Queued</span></div>
+                    <div class="ui-row"><span class="ui-bar w-20"></span><span class="ui-bar w-30"></span><span class="ui-pill">Live</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project__meta">
+              <span class="micro project__num">P—01</span>
+              <span class="micro">Business Systems</span>
+              <span class="micro">2025</span>
+            </div>
+            <h3 class="project__title">Meridian Operations Platform</h3>
+            <p class="project__desc">A unified operations system replacing spreadsheets and disconnected tools with one real-time source of truth.</p>
+            <span class="project__cta micro">View case study <span aria-hidden="true">→</span></span>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project project--b" data-reveal data-cursor="View case">
+            <a class="project__link" href="#work" aria-label="View case study: Atlas Field App"></a>
+            <div class="project__visual">
+              <div class="ui ui-phone" data-parallax="0.08">
+                <div class="ui-phone__notch"></div>
+                <div class="ui-phone__map">
+                  <svg viewBox="0 0 160 150" preserveAspectRatio="none">
+                    <path class="grid-l" d="M0 30H160M0 60H160M0 90H160M0 120H160M32 0V150M64 0V150M96 0V150M128 0V150"/>
+                    <path class="route" d="M18 132 L18 96 L58 96 L58 54 L112 54 L112 22 L142 22"/>
+                    <circle cx="18" cy="132" r="4" class="pt"/><circle cx="142" cy="22" r="5" class="pt-acc"/>
+                  </svg>
+                </div>
+                <div class="ui-phone__list">
+                  <div class="ui-row"><span class="ui-dot"></span><span class="ui-bar w-60"></span></div>
+                  <div class="ui-row"><span class="ui-dot is-on"></span><span class="ui-bar w-40"></span></div>
+                  <div class="ui-row"><span class="ui-dot"></span><span class="ui-bar w-50"></span></div>
+                </div>
+                <div class="ui-phone__btn"></div>
+              </div>
+            </div>
+            <div class="project__meta">
+              <span class="micro project__num">P—02</span>
+              <span class="micro">Mobile · Logistics</span>
+              <span class="micro">2025</span>
+            </div>
+            <h3 class="project__title">Atlas Field App</h3>
+            <p class="project__desc">Offline-first mobile tooling that keeps field teams, routes and dispatch in sync.</p>
+            <span class="project__cta micro">View case study <span aria-hidden="true">→</span></span>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project project--c" data-reveal data-cursor="View case">
+            <a class="project__link" href="#work" aria-label="View case study: Lumen Data Pipeline"></a>
+            <div class="project__visual">
+              <div class="ui ui-pipe" data-parallax="-0.04">
+                <div class="ui-pipe__flow">
+                  <div class="ui-node"><span class="micro">01</span><b>Ingest</b><span class="ui-bar w-60"></span></div>
+                  <span class="ui-wire"><i></i></span>
+                  <div class="ui-node"><span class="micro">02</span><b>Transform</b><span class="ui-bar w-40"></span></div>
+                  <span class="ui-wire"><i></i></span>
+                  <div class="ui-node ui-node--acc"><span class="micro">03</span><b>Model</b><span class="ui-bar w-50"></span></div>
+                  <span class="ui-wire"><i></i></span>
+                  <div class="ui-node"><span class="micro">04</span><b>Serve</b><span class="ui-bar w-30"></span></div>
+                </div>
+                <div class="ui-pipe__log micro">
+                  <span>› job.ingest &nbsp;&nbsp;&nbsp;&nbsp;status=ok&nbsp;&nbsp;source=erp</span>
+                  <span>› job.transform status=ok&nbsp;&nbsp;schema=v4</span>
+                  <span class="t-acc">› job.model &nbsp;&nbsp;&nbsp;&nbsp;status=running</span>
+                </div>
+              </div>
+            </div>
+            <div class="project__row">
+              <div class="project__meta">
+                <span class="micro project__num">P—03</span>
+                <span class="micro">Data · Automation</span>
+                <span class="micro">2026</span>
+              </div>
+              <h3 class="project__title">Lumen Data Pipeline</h3>
+              <p class="project__desc">An automated data platform turning raw operational records into reliable, decision-ready reporting.</p>
+              <span class="project__cta micro">View case study <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. The QVIX approach ---------------------------------------------->
+    <section class="approach" id="approach" aria-labelledby="approach-title" data-approach>
+      <div class="approach__pin">
+        <div class="approach__head wrap">
+          <p class="section-label"><span class="accent">04</span> / The QVIX approach</p>
+          <h2 class="approach__title" id="approach-title">From question to system<span class="accent">.</span></h2>
+          <div class="approach__progress" aria-hidden="true">
+            <span class="micro" data-approach-current>01</span>
+            <span class="approach__rail"><span data-approach-bar></span></span>
+            <span class="micro">04</span>
+          </div>
+        </div>
+
+        <ol class="approach__track" data-approach-track>
+          <li class="stage">
+            <div class="stage__top"><span class="stage__num">01</span><span class="micro">Stage / Discover</span></div>
+            <svg class="stage__vis" viewBox="0 0 200 120" aria-hidden="true">
+              <circle cx="100" cy="60" r="44"/><circle cx="100" cy="60" r="28" class="faint"/><circle cx="100" cy="60" r="12" class="faint"/>
+              <line x1="40" y1="60" x2="160" y2="60" class="faint"/><line x1="100" y1="6" x2="100" y2="114" class="faint"/>
+              <circle cx="128" cy="40" r="4" class="fill-acc"/>
+            </svg>
+            <h3 class="stage__title">Discover</h3>
+            <p class="stage__text">We start with the business, not the technology. Stakeholder interviews, process mapping and system audits define what actually needs to change — and what success looks like.</p>
+            <ul class="stage__out micro"><li>Problem definition</li><li>System audit</li><li>Success measures</li></ul>
+          </li>
+          <li class="stage">
+            <div class="stage__top"><span class="stage__num">02</span><span class="micro">Stage / Architect</span></div>
+            <svg class="stage__vis" viewBox="0 0 200 120" aria-hidden="true">
+              <rect x="20" y="16" width="48" height="32"/><rect x="132" y="16" width="48" height="32"/><rect x="76" y="76" width="48" height="32" class="acc"/>
+              <path d="M44 48 V92 H76 M156 48 V92 H124" class="faint"/><line x1="68" y1="32" x2="132" y2="32" class="faint"/>
+            </svg>
+            <h3 class="stage__title">Architect</h3>
+            <p class="stage__text">We design the system before we write it — data models, integrations, infrastructure and a delivery plan sized to risk, so every decision is made once and on purpose.</p>
+            <ul class="stage__out micro"><li>Architecture blueprint</li><li>Technical roadmap</li><li>Delivery plan</li></ul>
+          </li>
+          <li class="stage">
+            <div class="stage__top"><span class="stage__num">03</span><span class="micro">Stage / Build</span></div>
+            <svg class="stage__vis" viewBox="0 0 200 120" aria-hidden="true">
+              <rect x="20" y="84" width="36" height="24"/><rect x="62" y="64" width="36" height="44"/><rect x="104" y="40" width="36" height="68"/><rect x="146" y="12" width="36" height="96" class="acc"/>
+              <line x1="10" y1="108" x2="190" y2="108" class="faint"/>
+            </svg>
+            <h3 class="stage__title">Build</h3>
+            <p class="stage__text">Small, accountable teams ship in short cycles with automated testing, code review and continuous delivery from the first week — progress you can see and use.</p>
+            <ul class="stage__out micro"><li>Working software</li><li>CI/CD pipeline</li><li>Documentation</li></ul>
+          </li>
+          <li class="stage">
+            <div class="stage__top"><span class="stage__num">04</span><span class="micro">Stage / Evolve</span></div>
+            <svg class="stage__vis" viewBox="0 0 200 120" aria-hidden="true">
+              <path d="M100 60 m0 -8 a8 8 0 1 1 -8 8 a16 16 0 1 1 16 16 a26 26 0 1 1 -26 -26 a38 38 0 1 1 38 38" class="acc"/>
+              <line x1="10" y1="60" x2="190" y2="60" class="faint"/>
+            </svg>
+            <h3 class="stage__title">Evolve</h3>
+            <p class="stage__text">Launch is the midpoint. We monitor, measure and keep improving as the business grows, so the system stays an advantage rather than becoming legacy.</p>
+            <ul class="stage__out micro"><li>Monitoring</li><li>Iteration roadmap</li><li>Ongoing support</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 8. Technology / system -------------------------------------------->
+    <section class="system section" id="system" aria-labelledby="system-title">
+      <div class="wrap grid">
+        <div class="system__copy">
+          <p class="section-label"><span class="accent">05</span> / System architecture</p>
+          <h2 class="section-title" id="system-title" data-reveal="lines">Every moving part, connected.</h2>
+          <p class="system__lead" data-reveal>Businesses don’t run on isolated tools. We design the integration layer that lets people, data, software and infrastructure work as one system — observable, secure and ready to change.</p>
+        </div>
+
+        <div class="system__diagram">
+          <div class="system__frame">
+            <div class="system__frame-top micro">
+              <span>Fig. 05 — Reference architecture</span>
+              <span><span class="dot dot--live"></span>Live</span>
+            </div>
+            <svg class="system__svg" viewBox="0 0 800 560" data-system-svg role="img" aria-labelledby="system-svg-title">
+              <title id="system-svg-title">Diagram: Business, Data, Software, People, Automation and Infrastructure connected through a central integration core.</title>
+              <defs>
+                <pattern id="sys-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-width=".5" opacity=".12"/>
+                </pattern>
+              </defs>
+              <rect width="800" height="560" fill="url(#sys-grid)"/>
+              <g data-links></g>
+              <g data-packets></g>
+              <g data-tags></g>
+              <g data-nodes></g>
+            </svg>
+            <div class="system__console micro" data-system-console aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="system__panel">
+          <ul class="system__legend" data-system-legend>
+            <!-- populated from the node definitions in system.js -->
+          </ul>
+
+          <div class="system__detail" data-system-detail aria-live="off">
+            <span class="micro system__detail-k" data-detail-id>Node / 00</span>
+            <p class="system__detail-title" data-detail-title>Integration core</p>
+            <p class="system__detail-text" data-detail-text>The layer QVIX designs: APIs, events and shared services that keep every part of the business in sync.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Numbers --------------------------------------------------------->
+    <!-- PLACEHOLDER: replace "XX" values with confirmed figures. Set the
+         number in data-count (e.g. data-count="120") to enable the count-up. -->
+    <section class="numbers section" aria-labelledby="numbers-title">
+      <div class="wrap">
+        <header class="section-head grid">
+          <p class="section-label"><span class="accent">06</span> / In numbers</p>
+          <h2 class="visually-hidden" id="numbers-title">QVIX Group in numbers</h2>
+        </header>
+        <dl class="numbers__grid">
+          <div class="stat stat--lead" data-reveal>
+            <dt class="stat__label"><span class="micro">N / 01</span>Technology disciplines</dt>
+            <dd class="stat__value"><span data-count="10">10</span><span class="stat__plus">+</span></dd>
+          </div>
+          <div class="stat" data-reveal>
+            <dt class="stat__label"><span class="micro">N / 02</span>Projects delivered</dt>
+            <dd class="stat__value is-placeholder"><span data-count="">XX</span><span class="stat__plus">+</span></dd>
+          </div>
+          <div class="stat" data-reveal>
+            <dt class="stat__label"><span class="micro">N / 03</span>Businesses supported</dt>
+            <dd class="stat__value is-placeholder"><span data-count="">XX</span><span class="stat__plus">+</span></dd>
+          </div>
+          <div class="stat" data-reveal>
+            <dt class="stat__label"><span class="micro">N / 04</span>Years of experience</dt>
+            <dd class="stat__value is-placeholder"><span data-count="">XX</span><span class="stat__plus">+</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 10. Insights ------------------------------------------------------->
+    <section class="insights section" id="insights" aria-labelledby="insights-title">
+      <div class="wrap">
+        <header class="section-head grid">
+          <p class="section-label"><span class="accent">07</span> / Insights</p>
+          <h2 class="section-title" id="insights-title" data-reveal="lines">Notes from the build.</h2>
+          <a class="link-arrow section-note" href="#insights">
+            <span>All insights</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </header>
+
+        <div class="insights__grid">
+          <article class="article article--feature" data-reveal>
+            <a class="article__link" href="#insights">
+              <div class="article__cover" aria-hidden="true">
+                <svg viewBox="0 0 600 380" preserveAspectRatio="xMidYMid slice" data-parallax="0.05">
+                  <g class="cover-lines"></g>
+                </svg>
+                <span class="micro article__cover-tag">Essay — 01</span>
+              </div>
+              <div class="article__meta micro">
+                <span class="article__cat">Systems</span>
+                <time datetime="2026-09-18">18 Sep 2026</time>
+                <span>8 min read</span>
+              </div>
+              <h3 class="article__title">The quiet cost of disconnected systems</h3>
+              <p class="article__excerpt">Most operational drag isn’t caused by bad software. It’s caused by good software that doesn’t talk to anything else.</p>
+            </a>
+          </article>
+
+          <div class="insights__list">
+            <article class="article article--row" data-reveal data-cursor-preview="a">
+              <a class="article__link" href="#insights">
+                <div class="article__meta micro">
+                  <span class="article__cat">Automation</span>
+                  <time datetime="2026-08-27">27 Aug 2026</time>
+                  <span>6 min read</span>
+                </div>
+                <h3 class="article__title">Automation is an architecture decision, not a tool purchase</h3>
+                <span class="article__arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+              </a>
+            </article>
+            <article class="article article--row" data-reveal data-cursor-preview="b">
+              <a class="article__link" href="#insights">
+                <div class="article__meta micro">
+                  <span class="article__cat">Engineering</span>
+                  <time datetime="2026-07-30">30 Jul 2026</time>
+                  <span>5 min read</span>
+                </div>
+                <h3 class="article__title">Building software that survives its second year</h3>
+                <span class="article__arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Final CTA ------------------------------------------------------>
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <canvas class="cta__field" data-cta-field aria-hidden="true"></canvas>
+      <div class="cta__inner wrap grid">
+        <p class="section-label cta__label"><span class="accent">08</span> / Contact</p>
+        <h2 class="cta__title" id="cta-title" data-reveal="lines">
+          Have a complex problem worth solving<span class="accent">?</span>
+        </h2>
+        <div class="cta__foot">
+          <p class="cta__lead" data-reveal>Let’s turn the problem into a system that works.</p>
+          <!-- PLACEHOLDER: point to the contact page or a mailto: address -->
+          <a class="cta__btn" href="#contact" data-magnetic data-magnetic-strength="0.4">
+            <span class="cta__btn-ring" aria-hidden="true"></span>
+            <span class="cta__btn-label">Start a<br>conversation</span>
+            <svg class="cta__btn-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 12. Footer --------------------------------------------------------->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top grid">
+        <div class="footer__brand">
+          <a class="logo" href="#top" aria-label="QVIX Group — back to top">
+            <svg class="logo__mark" viewBox="0 0 28 28" aria-hidden="true">
+              <rect x="1.5" y="1.5" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <path d="M13 13 L26.5 26.5" stroke="currentColor" stroke-width="2.2"/>
+              <rect x="8.5" y="8.5" width="5" height="5" class="logo__dot"/>
+            </svg>
+            <span class="logo__word">QVIX</span><span class="logo__group">Group</span>
+          </a>
+          <p class="footer__tag">Technology <span aria-hidden="true">•</span> Software <span aria-hidden="true">•</span> Digital Systems</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Footer">
+          <p class="micro footer__k">Navigation</p>
+          <ul>
+            <li><a href="#capabilities">Services</a></li>
+            <li><a href="#system">Solutions</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#insights">Insights</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <p class="micro footer__k">Social</p>
+          <ul>
+            <!-- PLACEHOLDER: add profile URLs -->
+            <li><a href="#" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+            <li><a href="#" rel="noopener">Facebook <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--end">
+          <p class="micro footer__k">Local time</p>
+          <p class="footer__time" data-clock>--:--:--</p>
+          <a class="link-arrow footer__top-link" href="#top">
+            <span>Back to top</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14V2M3 7l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__mark" aria-hidden="true" data-parallax="-0.08">
+        <svg viewBox="0 0 1000 220" preserveAspectRatio="xMidYMid meet">
+          <text x="0" y="196" textLength="1000" lengthAdjust="spacingAndGlyphs">QVIX</text>
+        </svg>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="micro">© 2026 QVIX Group. All rights reserved.</p>
+        <p class="micro footer__bottom-mid">Press <kbd>G</kbd> to reveal the grid</p>
+        <p class="micro">QVG / 12</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/loader.js" defer></script>
+  <script src="assets/js/header.js" defer></script>
+  <script src="assets/js/reveal.js" defer></script>
+  <script src="assets/js/hero.js" defer></script>
+  <script src="assets/js/capabilities.js" defer></script>
+  <script src="assets/js/approach.js" defer></script>
+  <script src="assets/js/system.js" defer></script>
+  <script src="assets/js/interactions.js" defer></script>
+  <script src="assets/js/cta-field.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
